@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatórios ESUS</title>
+    <link rel="shortcut icon" href="/assets/img/2.svg">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  
+    <!--Css-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--Javascript-->
+    <script src="js/script.js" defer></script>
+</head>
+
+<body style="background-color: #e7eaea;">
+  <div class="row">
+        <!--Navbar-->
+        <nav class="navbar bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="/assets/img/1.svg" alt="Logo" width="60" height="44" class="d-inline-block align-text-top">
+              <strong>Relatório E-sus</strong>
+            </a>
+          </div>
+        </nav>
+
+         <!--Menu-->
+        <div class="col-md-3 d-md-block d-none" style="background-color: #fcfcfc;">
+            <div class="row">
+              <div class="container-fluid">
+                <div class="row min-vh-100 flex-column flex-md-row">
+                  
+                    <nav class="navbar navbar-expand-md flex-md-column flex-row align-items-center py-2 text-center sticky-top" id="sidebar">
+                      <button type="button" class="navbar-toggle border-0 order-1"    data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navibar-toggle-iconr"></span>
+                      </button>
+                      
+                      <div class="collapse navbar-collapse order-1" id="nav">
+                        <ul class="navbar-nav flex-column w-100 justify-content-center">
+                          <li class="nav-item">
+                            <a href="home.html" class="nav-link">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="capitacao.html" class="nav-link">Capitação Ponderada</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="desempenho.html" class="nav-link">Desempenho</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="producao.html" class="nav-link">Produção</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="usuario.html" class="nav-link">Usuário</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="alterarSenha.html" class="nav-link">Alterar Senha</a>
+                          </li>
+                          <li class="nav-item">
+                            <a href="#" class="nav-link">Sair</a>
+                          </li>
+                        </ul>
+                      </div> 
+                    </nav>
+                </div>
+              </div>
+            </div>
+        </div>
+     
+         
+        <!--Body-->
+        <div class="col-md-9 col-12">
+           <div class="row">
+              <!--<div id="janModal" class="modal-fade">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h3 class="modal-title">Cadastre um novo usuario</h3>
+                      <button type="button" class="btn btn-close" data-dismiss="modal"></button>
+                    </div>
+                    
+                    <div class="modal-body">
+                      <form>
+                        <div class="col-md-9 col-12">
+                          <label for="text" class="form-label">Nome</label>
+                          <input tpe="text" class="form-control" placeholder="Nome">
+                        </div>
+
+                        <div class="col-md-9 col-12">
+                          <label for="text" class="form-label">CPF</label>
+                          <input tpe="text" class="form-control" placeholder="CPF">
+                        </div>
+
+                        <div class="col-md-9 col-12">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Escreva seu email">
+                          <div id="emailHelp" class="form-text">Não compartilhamos seu email</div>
+                        </div>
+
+                        <div class="col-md-9 col-12">
+                          <label for="text" class="form-label">Telefone</label>
+                          <input tpe="text" class="form-control" placeholder="Telefone">
+                        </div>
+
+                        <div class="col-md-9 col-12">
+                          <label for="cidades" class="form-label">Município</label>
+                          <input class="form-control" list="datalistOptions" id="cidades" placeholder="Selecione o município">
+                          <datalist id="datalistOptions">
+                              <option value="Cupira">
+                              <option value="Agrestina">
+                              <option value="Panelas">
+                              <option value="Caruaru">
+                          </datalist>
+                        </div>
+
+                        <div class="col-md-9 col-12">
+                          <label for="cidades" class="form-label">Perfil</label>
+                          <input class="form-control" list="datalistOptions" id="cidades" placeholder="Selecione seu perfil">
+                          <datalist id="datalistOptions">
+                              <option value="Coordenador">
+                              <option value="Gestor">
+                              <option value="Sem vínculo">
+                          </datalist>
+                        </div>
+
+                        <div class="col-md-9 col-12">
+                          <label for="cidades" class="form-label">Equipes</label>
+                          <input class="form-control" list="datalistOptions" id="cidades" placeholder="Selecione sua equipe">
+                          <datalist id="datalistOptions">
+                              <option value="São Paulo">
+                              <option value="Rio de Janeiro">
+                              <option value="Recife">
+                              <option value="Caruaru">
+                          </datalist>
+                      </div>
+
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Salvar</button>
+                      </div>
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+                -->
+          
+                 <h3>Usuários Cadastrados</h3>    
+    
+                 <div>
+                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Cadastrar</button>
+                 </div>
+
+                <form class="d-flex mt-2" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-primary" type="submit">Buscar</button>
+                </form> 
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Nome</th>
+                      <th scope="col">CPF</th>
+                      <th scope="col">Editar</th>
+                      <th scope="col">Vincular</th>
+                      <th scope="col">Excluir</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Mark</td>
+                      <td>12345678910</td>
+                      <td><button class="btn btn-primary">Editar</button></td>
+                      <td><button class="btn btn-primary">Vincular</button></td>
+                      <td><button class="btn btn-primary">Excluir</button></td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+            </div>
+          </div>
+         
+          
+      </div>
+  </div>
+
+
+
+
+
+  
+</body>
+</html>

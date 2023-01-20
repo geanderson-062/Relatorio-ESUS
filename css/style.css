@@ -1,33 +1,53 @@
 /*login*/
-.form-label{color:#fff;
+.form-label {
+  color: #fff;
 }
-.form-container{
-    padding: 50px 60px;
-    margin-top: 150px;
-    -webkit-box-shadow: -1px 0px 33px 15px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 0px 33px 15px rgba(0,0,0,0.75);
-     box-shadow: -1px 0px 33px 15px rgba(0,0,0,0.75);
-}
-
-.form-control-transparent{
-    background-color: rgba(255, 255, 255, 0.8);
+.form-container {
+  padding: 50px 60px;
+  margin-top: 150px;
+  -webkit-box-shadow: -1px 0px 33px 15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 0px 33px 15px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px 0px 33px 15px rgba(0, 0, 0, 0.75);
 }
 
-.select2-container{
-    font-weight: 400;
-    line-height: 1.5;
+.form-control-transparent {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.select2-container {
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 /*Configuração tamnahos*/
 .elemento {
-    margin-top: 70px; /* margem padrão */
+  margin-top: 70px; /* margem padrão */
+}
+
+@media only screen and (max-width: 600px) {
+  .elemento {
+    margin-top: 5px; /* margem para telas com largura máxima de 600px */
   }
-  
-  @media only screen and (max-width: 600px) {
-    .elemento {
-      margin-top: 5px; /* margem para telas com largura máxima de 600px */
-    }
-  }
+}
 
+#card-home {
+  /*distancio das bordas nos dispositivos mobile*/
+  margin-left: 50px;
+  margin-right: 50px;
+}
+#card-home-1 {
+  margin-left: 10px; /*distancia do elemento a esquerda*/
+  margin-right: 10px; /*distancia do elemento a direita*/
+}
+#card-home-2 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#card-home-3 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
-
+a {
+  text-decoration: none; /*tirando as marcações colorida das tag a */
+}

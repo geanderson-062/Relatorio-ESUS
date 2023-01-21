@@ -1,73 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Relatórios ESUS</title>
-    <link rel="shortcut icon" href="./assets/img/2.svg" />
 
-    <!--Bootstrap-->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Relatórios ESUS</title>
+  <link rel="shortcut icon" href="./assets/img/2.svg" />
 
-    <!--Css-->
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
 
-    <!--Javascript-->
-    <script src="./js/script.js" defer></script>
-  </head>
+  <!--Css-->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
 
-  <body
-    style="
-      background-image: url(/assets/img/background.png);
-      background-size: cover;
-      background-attachment: fixed;
-    "
-  >
-    <div class="container col-11 md-9" id="form-container">
-      <div
-        class="row h-100 d-flex justify-content-center align-items-center gx-5"
-      >
-        <div class="col-md-4 sm-4 col-xs-12">
-          <form class="form-container mx-auto row needs-validation" novalidate>
-            <div class="form-group">
-              <label for="cpf" class="form-label">CPF:</label>
-              <input
-                type="text"
-                class="form-control"
-                id="cpf"
-                placeholder="Digite seu cpf"
-                required
-              />
-              <div class="valid-feedback">ok</div>
-            </div>
-            <div class="form-group">
-              <label for="password" class="form-label">Senha:</label>
-              <input
-                type="text"
-                class="form-control"
-                id="password"
-                placeholder="Digite sua senha"
-                required
-              />
+  <!--Javascript-->
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+
+  <div class="container col-11 md-9" id="form-container">
+    <div class="row h-100 d-flex justify-content-center align-items-center gx-5 ">
+      <div class="col-md-4 sm-4 col-xs-12">
+        <form class="form-container mx-auto row needs-validation corPrimaria" novalidate>
+          <img src="./assets/img/1.svg" alt="Logo" width="150" height="150"
+            class="d-flex justify-content-center align-items-center" />
+
+          <div>
+            <br>
+            <h2 class="fs-2 text-center" style="color: #172474;">Login</h2>
+            <br>
+            <br>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="cpf" placeholder="Digite seu cpf" required />
+            <div class="valid-feedback">ok</div>
+          </div>
+          <div><br></div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="senha" placeholder="Digite sua senha" required />
+
+            <div class="form-check ">
+              <br>
+              <input class="form-check-input" type="checkbox" value="" onclick="mostrarOcultarSenha()">
+
+              <label class="form-check-label" for="defaultCheck1">
+                Exibir enha
+              </label>
             </div>
 
-            <button class="btn btn-primary btn-block mt-4" type="submit">
-              Entrar
-            </button>
-          </form>
-        </div>
+            <div class="d-grid gap-2">
+              <br>
+              <a href="./home.html" class="btn btn-primary" type="button">Entrar</a>
+            </div>
+
+
+          </div>
+          <br>
+
+          <script src="./js/exibir_senha.js"></script>
+
+        </form>
       </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

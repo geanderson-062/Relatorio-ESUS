@@ -58,3 +58,17 @@ body {
 a {
   text-decoration: none;
 }
+
+/*desenpenho*/
+.graficos {
+  width: 840px;
+  height: 200px;
+  border-radius: 6px;
+  border-color: black;
+  align-items: center;
+}
+
+#graficos-1 {
+  margin-top: 10px;
+  margin-left: 10px;
+}

@@ -81,19 +81,3 @@ a {
 }
 
 /*footer*/
-
-/*animação de movimentar */
-
-.animationLateral:hover {
-  animation: Movimentar 1s initial;
-}
-
-@keyframes Movimentar {
-  /*determinado a animção e o espaço dela se mexer*/
-
-  20% {
-    padding: 0.2rem;
-
-    background-color: #282a36;
-  }
-}

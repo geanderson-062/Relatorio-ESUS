@@ -12,6 +12,18 @@ body {
   background-color: #e7eaea;
 }
 
+.corBotao {
+  background-color: #172474;
+}
+
+.corAzul {
+  color: #172474;
+}
+
+.corVerde {
+  color: #167a34;
+}
+
 /*login ?*/
 .form-label {
   color: rgb(221, 25, 25);
